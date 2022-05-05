@@ -13,8 +13,10 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "https": "^1.0.0",
     "ip": "^1.1.5",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "public-ip": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

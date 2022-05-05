@@ -14,16 +14,28 @@
     <div class="container-fluid">
         <header class="row text-white p-5 text-center">
           <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item list-group-item-success">Public IP</li>
+            <li class="list-group-item list-group-item-success">Public IP (via socket)</li>
             <li class="list-group-item list-group-item-success"><%= publicIP %></li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item list-group-item-success">Public IP (via api)</li>
+            <li class="list-group-item list-group-item-success"><%= publicAPIIP %></li>
           </ul>
           <ul class="list-group list-group-horizontal-md">
             <li class="list-group-item list-group-item-warning">Local IP</li>
             <li class="list-group-item list-group-item-warning"><%= localIP %></li>
           </ul>
           <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item list-group-item-info">UserName</li>
+            <li class="list-group-item list-group-item-warning">Current OS</li>
+            <li class="list-group-item list-group-item-warning"><%= currentOS %></li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item list-group-item-info">UserName via userinfo</li>
             <li class="list-group-item list-group-item-info"><%= username %></li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item list-group-item-info">UserName via 'process'</li>
+            <li class="list-group-item list-group-item-info"><%= alternateUserName %></li>
           </ul>
         </div>
     </div>
