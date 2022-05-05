@@ -9,7 +9,20 @@ const today = new Date();
 const year = today.getFullYear(); 
 var extPublicIP = '';
 var currentOS = process.platform;
-var processUserName = process.env.USER;
+
+
+function getUsername() {
+  return (
+      process.env.SUDO_USER ||
+      process.env.C9_USER ||
+      process.env.LOGNAME ||
+      process.env.USER ||
+      process.env.LNAME ||
+      process.env.USERNAME
+  );
+};
+
+var processUserName = getUsername();
 
 
 
